@@ -1,0 +1,14 @@
+{
+    "name": "chrome-headless",
+    "version": "1.0.0",
+    "description": "chrome headless on Docker",
+    "author": "Sumit Chohan",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "puppeteer" : "^"
+    }
+  }

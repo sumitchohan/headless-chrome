@@ -4,7 +4,10 @@ if (!url) {
     throw "Please provide URL as a first argument";
 }
 async function run () {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox']
+     });
     const page = await browser.newPage();
     await page.goto(url);
     await page.screenshot({path: 'screenshot.png'});
